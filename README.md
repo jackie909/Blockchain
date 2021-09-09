@@ -177,7 +177,7 @@ Use MyCrypto like from the previous class, and explain to the students that in t
 12. Exit the puppeth prompt by using the Ctrl+C keys combination.
 ​
 
-![2](images/2.jpg)
+![2](images/2.png)
 
 
 ​
@@ -188,7 +188,7 @@ Use MyCrypto like from the previous class, and explain to the students that in t
 ./geth init puppernet.json --datadir node1
 ./geth init puppernet.json --datadir node2
 ```
-![3](images/3.jpg)
+![3](images/3.png)
 
 2. launch the first node into mining mode with the following command:
 ```bash
@@ -198,13 +198,13 @@ Use MyCrypto like from the previous class, and explain to the students that in t
 ```
 -  copy the entire `enode://` address (including the last `@address:port` segment) of the first node located in the `Started P2P Networking` line:
 
-![4](images/4.jpg)
+![4](images/4.png)
 
 3. Launch second node 
 ```bash
 ./geth --datadir node2 --unlock "NODE2_address" --mine --port 30305 --bootnodes enode://YOUR_ENDCODE_FROM_NODE1 --password node2/password.txt  --allow-insecure-unlock
 ```
-![5](images/5.jpg)
+![5](images/5.png)
 
 ​
   **Note**: If I ever encounter strange errors, or need to start over without destroying the accounts, run the following command to clear the chain data (this will reset the `enode` addresses as well):
@@ -230,13 +230,13 @@ Click on the "Save & Use Custom Node" button, to use the network; double-check t
 ​
 
 
-![6](images/6.jpg)
+![6](images/6.png)
 
 
 
 5. Import the keystore file from th e `node1/keystore` directory into MyCrypto. This will import the private key.
 
-![7](images/7.jpg)
+![7](images/7.png)
 
 6. Send a transaction from the `node1` account to the `node2` account.
 
@@ -246,7 +246,7 @@ Click on the "Save & Use Custom Node" button, to use the network; double-check t
 
 9. Celebrate, I just created a blockchain and sent a transaction!
 
-![8](images/8.jpg)
+![8](images/8.png)
 
 ### Remember, *never* share my mainnet private keys! This is a testnet, so coins have no value here!
 
